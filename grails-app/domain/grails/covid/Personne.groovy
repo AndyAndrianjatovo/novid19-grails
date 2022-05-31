@@ -13,6 +13,12 @@ class Personne {
     int sexe
     String cin
 
+    static mapping = {
+//        version false
+        table 'personne'
+//        id column: 'id', generator:'native', params:[sequence:'order_seq']
+    }
+
     static constraints = {
     }
 }
