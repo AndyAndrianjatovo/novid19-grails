@@ -4,14 +4,17 @@ import grails.rest.*
 
 @Resource(uri='/api/cartev', formats=['json', 'xml'])
 class CarteVaccination {
-
-    int idCarte
-    int personneId
+    Long id_carte
+    int personne_id
 
     static mapping = {
         table 'CarteVaccination'
+        version false
+        id column: 'id_carte'
+        id name: 'id_carte'
     }
 
     static constraints = {
+        personne_id blank:false
     }
 }

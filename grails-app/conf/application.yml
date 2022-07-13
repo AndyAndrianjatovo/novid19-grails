@@ -3,6 +3,8 @@ grails:
     profile: rest-api
     codegen:
         defaultPackage: grails.covid
+    cors:
+        enabled: true
     gorm:
         reactor:
             # Whether to translate GORM events into Reactor events
@@ -79,6 +81,8 @@ grails:
         defaultScope: singleton
     converters:
         encoding: UTF-8
+    cors:
+        enabled: true
 
 ---
 hibernate:
@@ -98,8 +102,8 @@ dataSource:
 environments:
     development:
         dataSource:
-            dbCreate: create
-            url: jdbc:oracle:thin:@192.168.137.121:1521:orcl
+            dbCreate: none
+            url: jdbc:oracle:thin:@192.168.88.25:1521:orcl
     test:
         dataSource:
             dbCreate: update
