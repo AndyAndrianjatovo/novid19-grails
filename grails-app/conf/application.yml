@@ -103,7 +103,7 @@ environments:
     development:
         dataSource:
             dbCreate: none
-            url: jdbc:oracle:thin:@192.168.88.25:1521:orcl
+            url: jdbc:oracle:thin:@192.168.88.29:1521:orcl
     test:
         dataSource:
             dbCreate: update
@@ -130,3 +130,8 @@ environments:
                 testOnReturn: false
                 jdbcInterceptors: ConnectionState
                 defaultTransactionIsolation: 2 # TRANSACTION_READ_COMMITTED
+
+converters:
+  encoding: UTF-8
+  json.default.deep: true
+
