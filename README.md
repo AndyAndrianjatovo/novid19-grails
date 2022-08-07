@@ -5,6 +5,9 @@ Ce projet est le web service fait en Grails.
 ## API et lien
 Base url https://pure-scrubland-05914.herokuapp.com/
 
+![novid](https://user-images.githubusercontent.com/55956913/183304817-d82831ca-b8be-4712-8b98-6d298b57908c.png)
+
+
 ### Personne
 
 GET,POST,PUT: api/personne
